@@ -2,9 +2,33 @@
 <html>
   <head>
     <title>Cooking App</title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.4.1.js"></script>
+    <script src="js/scripts.js"></script>
   </head>
   <body>
-    <h1>Cooking App</h1>
-    <script src="js/scripts.js"></script>
+    <div class="container">
+      <h1>Cooking App</h1>
+      <form id="gallToLiters">
+        <div class="form-group">
+          <label for="gallon">Enter the Volume in gallons:</label>
+          <input id="gallon" class="form-control" type="text">
+        </div>
+        <button type="submit" class="btn btn-primary"> Conversion Starts to Liters!</button>
+      </form>
+      <br>
+      <br>
+      <form id="tbspToGrams">
+        <div class="form-group">
+          <label for="tbsp">Enter the number TBSP:</label>
+          <input id="tbsp" class="form-control" type="text">
+        </div>
+        <button type="submit" class="btn btn-primary"> Conversion Starts to Grams!</button>
+      </form>
+      <br>
+      <div id="output">
+      </div>
+    </div>
   </body>
 </html>
